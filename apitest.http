@@ -1,0 +1,17 @@
+
+post http://localhost:8888/.netlify/functions/addtask
+Content-Type: application/json
+
+{
+  "name": "Buy milk 2"
+}
+
+###
+get http://localhost:8888/.netlify/functions/listtasks
+###
+DELETE http://localhost:8888/.netlify/functions/deletetask
+Content-Type: application/json
+
+{
+  "id": "344130289049535049"
+}
